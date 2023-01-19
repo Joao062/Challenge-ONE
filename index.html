@@ -8,7 +8,41 @@
     <title>Decodificador ONE</title>
 </head>
 <body>
-    
+    <header>DECODIFICADOR</header> <!--Colocar titulo e icone do alura-->
+    <main id = 'mainContainer'>
+
+        <!--Área para digitar o texto-->
+        <div id="inputContainer">
+            <div class="input">
+                <textarea name="textArea" id="textArea" cols="15" rows="10" placeholder="Digite o texto..."></textarea>
+                <p>ATENÇÃO: APENAS LETRAS MINUSCULAS</p>
+            </div>
+        </div>
+
+        <!--Botões-->
+            <div class="buttons">
+                <div class="containerButton">
+                    <button id="crypt">Cripitografar</button>
+                    <button id="decrypt">Descriptografar</button>
+                </div>
+            </div>
+
+
+             
+        <!--Resultado da Ação-->
+        <div id="output">
+            <h2>sua mensagem aparecera aqui!</h2>
+            <span>Digite um texto que deseja criptografar ou Descripografar</span>
+        </div>
+
+
+
+    </main>
+
+        <footer>
+            <p>Desenvolvido por Jão</p>
+        </footer>
+
 </body>
 <script src="script.js"></script>
 </html>
