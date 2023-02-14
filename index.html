@@ -1,48 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
-    <title>Decodificador ONE</title>
+    <title>Decodificador</title>
 </head>
 <body>
-    <header>DECODIFICADOR</header> <!--Colocar titulo e icone do alura-->
-    <main id = 'mainContainer'>
 
-        <!--Área para digitar o texto-->
-        <div id="inputContainer">
-            <div class="input">
-                <textarea name="textArea" id="textArea" cols="15" rows="10" placeholder="Digite o texto..."></textarea>
-                <p>ATENÇÃO: APENAS LETRAS MINUSCULAS</p>
+    <header>
+        <img src="./imagens/logoAlura.png" alt="Logo da Alura">
+    </header>
+    
+    <main>
+        <section>
+            <textarea class="text-area"  cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+    
+            <div>
+                <h6 class="informacao">Apenas letras minúsculas e sem acento.</h6>
             </div>
-        </div>
-
-        <!--Botões-->
-            <div class="buttons">
-                <div class="containerButton">
-                    <button id="crypt">Cripitografar</button>
-                    <button id="decrypt">Descriptografar</button>
-                </div>
+            <div class="botoes">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
             </div>
-
-
-             
-        <!--Resultado da Ação-->
-        <div id="output">
-            <h2>sua mensagem aparecera aqui!</h2>
-            <span>Digite um texto que deseja criptografar ou Descripografar</span>
-        </div>
-
-
-
+        </section>
+        
+        <section>
+            <textarea class="mensagem"  cols="20" rows="10"></textarea>
+            <button class="btn-copiar">Copiar</button>
+        </section>
     </main>
-
-        <footer>
-            <p>Desenvolvido por Jão</p>
-        </footer>
-
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
