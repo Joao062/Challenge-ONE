@@ -13,8 +13,7 @@
 }
 
 main {
-    text-align: center;
-    align-items: center;
+    display: flex;
     margin-bottom: 50px;
     margin-left: 80px;
 }
@@ -101,3 +100,12 @@ footer{
     font-size: 14px;
     color: #333;
 }
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+
+}
+
