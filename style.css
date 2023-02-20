@@ -1,10 +1,17 @@
 * {
-    background: #E5E5E5;
+    
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
+    
 }
+
+html{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(16,9,121,0.8659664549413515) 39%, rgba(0,212,255,1) 100%); 
+}
+
 
 .logo {
     margin-left: 10px;
@@ -14,6 +21,9 @@
 
 main {
     display: flex;
+    justify-content: center;
+  align-items: center;
+    flex-direction: column;
     margin-bottom: 50px;
     margin-left: 80px;
 }
@@ -21,8 +31,13 @@ main {
 .text-area {
     border: none;
     color: #0A3871;
-    margin-top: 90px;
+    background-color: #D8DFE8;
+    font-family: 'Courier New', Courier, monospace;
     text-transform: lowercase;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    height: 70px;
+    width: 500px;
 }
 ::placeholder { color: #0A3871; }
   .text-area:focus {
@@ -31,26 +46,30 @@ main {
 
 .mensagem {
     background: white;
-    background-image: url("./Imagens/NenhumTexto.png");
+    font-family: 'Courier New', Courier, monospace;
     background-repeat: no-repeat;
+    background-size: cover;
     border: none;
     border-radius: 24px;
     color: #0A3871;
-    margin-left: 98px;
     margin-top: 20px;
     padding-left: 20px;
-    position: fixed;
+    position: flex;
+    height: 70px;
+    width: 500px;
 }
 .mensagem:focus {
     outline: none;
 }
 
 .botoes {
+    background-color: #bbd5f5;
     display: flex;
     margin-top: 18px;
 }
 
 .btn-desencriptar {
+    font-family: 'Courier New', Courier, monospace;
     background: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 24px;
@@ -61,7 +80,18 @@ main {
     width: 328px;
 }
 
+h2{
+    background-color: #bbd5f5;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 150%;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+
+}
+
 .btn-encriptar {
+    font-family: 'Courier New', Courier, monospace;
     background-color: #0A3871;
     border: 1px solid #0A3871;
     border-radius: 24px;
@@ -72,20 +102,38 @@ main {
 }
 
 .btn-copiar {
+    font-family: 'Courier New', Courier, monospace;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 108px;
-    margin-top: 402px;
-    position: absolute;
-    width: 336px;
+    margin-left: 30px;
+    position: flex;
+    width: 300px;
+    background-color: #D8DFE8;
 }
 
 .informacao {
+    background-color: #bbd5f5;
     color: #495057;
     font-size:18px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-
+section{
+    background-color: #bbd5f5;
+    padding: 50px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border: 1px solid #0A3871;
+    background-color: #bbd5f5;
+}

@@ -1,6 +1,8 @@
 const textArea = document.querySelector(".text-area");
 const mensagem = document.querySelector(".mensagem");
 
+const addCSS = css => document.head.appendChild(document.createElement("style")).innerHTML=css;
+
 
 function btnEncriptar() {
     const textoEncriptado = encriptar(textArea.value);
@@ -44,3 +46,6 @@ function desencriptar(stringDesencriptada) {
 
     return stringDesencriptada;
 }
+
+
+

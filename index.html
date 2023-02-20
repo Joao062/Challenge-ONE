@@ -17,7 +17,8 @@
     
     <main>
         <section>
-            <textarea class="text-area"  cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+            <h2>Decodificador de Texto</h2>
+            <input class="text-area"  placeholder="Digite seu texto"></input>
     
             <div>
                 <h6 class="informacao">Apenas letras minúsculas e sem acento.</h6>
@@ -26,12 +27,12 @@
                 <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
                 <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
             </div>
+            <input type="text" class="mensagem" readonly>
+            <button class="btn-copiar">Copiar texto</button>
         </section>
         
-        <section>
-            <textarea class="mensagem"  cols="20" rows="10"></textarea>
-            <button class="btn-copiar">Copiar</button>
-        </section>
+        <footer>Feito por João Victor Lopes</footer>
+
     </main>
     <script src="script.js"></script>
 </body>
