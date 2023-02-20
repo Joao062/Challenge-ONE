@@ -1,7 +1,13 @@
 const textArea = document.querySelector(".text-area");
 const mensagem = document.querySelector(".mensagem");
 
-const addCSS = css => document.head.appendChild(document.createElement("style")).innerHTML=css;
+function Copiar() {
+    var copiar = mensagem;
+    copiar.select();
+    copiar.setSelectionRange(0, 99999);
+
+    navigator.clipboard.writeText(copiar.value);
+}
 
 
 function btnEncriptar() {
